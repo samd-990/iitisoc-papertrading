@@ -1,0 +1,14 @@
+{% load static %}
+
+<header>
+    <nav>
+        <a href="{% url "home" %}"><img src={% static 'app1/images/logo.png' %}  alt="logo" class="logo"></a>
+        <ul>
+            <li><a href="{% url "home" %}" class="navlink">Home</a></li>
+            <li><a href={% url "aboutpage"%} class="navlink">About us</a></li>
+            <li><a href="{% url "portfolio" %}" class="navlink">Portfolio</a></li>
+            <li><a href="{% url "view_market" %}" class="navlink">View Market</a></li>
+        </ul>
+        <a href="{% url "home" %}"><img src={% static 'app1/images/icon.png' %} alt="icon" class="icon"></a>
+    </nav>
+</header>

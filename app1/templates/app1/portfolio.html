@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "app1/header.css" %}">
+{% endblock  %}
+
+{% block page_title%} Portfolio {% endblock %}
+
+{% block content %}
+    {% include "app1/header.html" %}
+    
+{% endblock  %}

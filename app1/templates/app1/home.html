@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "app1/header.css" %}">
+    <link rel="stylesheet" href="{% static "app1/home.css" %}">
+{% endblock  %}
+
+{% block page_title%} Home {% endblock %}
+
+{% block content %}
+    {% include "app1/header.html" %}
+    <div class="welcomebox">
+        <div>
+            <h1>Stocks made easier</h1>
+            <p>Experience the excitement and challenges of real-world trading in a risk-free environment with website.com</p>
+        </div>
+        <div>
+            <img src={% static 'app1/images/homepic.jpg' %} class="homepic">
+        </div>
+    </div>
+{% endblock  %}

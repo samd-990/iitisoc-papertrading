@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "app1/header.css" %}">
+    <link rel="stylesheet" href="{% static "app1/about.css" %}">
+{% endblock  %}
+
+{% block page_title%} About Us{%endblock%}
+
+{% block content %}
+    {% include "app1/header.html" %}
+    <div class="dummy"></div>
+    <h1>Our Team</h1>
+
+    <ul class="members">
+        <li>
+            <img src="{% static "app1/images/220001068.jpg" %}">
+            Samyak Dhyani
+        </li>
+        <li>
+            <img src="{% static "app1/images/220001071.jpg" %}">
+            Satya Narayan
+        </li>
+        <li>
+            <img src="{% static "app1/images/220001056.jpg" %}">
+            Param Bansal
+        </li>
+        <li>
+            <img src="{% static "app1/images/images.jpg" %}">
+             Manas Khatri
+        </li>
+    </ul>
+{% endblock  %}
