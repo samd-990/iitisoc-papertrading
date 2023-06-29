@@ -3,11 +3,19 @@
 
 {% block css_files %}
     <link rel="stylesheet" href="{% static "app1/header.css" %}">
+    <link rel="stylesheet" href="{% static "app1/view_market.css" %}">
 {% endblock  %}
 
 {% block page_title%} View Market {% endblock %}
 
 {% block content %}
     {% include "app1/header.html" %}
-    
+    <div class="dummy">
+        
+    </div>
+    <ul class="stock_grid">
+        {% for stock in stock_info %}
+            {% include "app1/includes/stock.html" %}
+        {% endfor %}
+    </ul>
 {% endblock  %}
