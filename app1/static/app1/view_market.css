@@ -14,3 +14,13 @@
     padding: 10px;
     border-radius: 12px;
 }
+
+.greytext{
+    color: grey;
+}
+.redtext{
+    color: rgb(255, 0, 0);
+}
+.greentext{
+    color: rgb(52, 181, 52);
+}

@@ -2,10 +2,10 @@
     <h1>{{stock.name}}</h1>
     <h2>Rs. {{stock.price}}</h2>
     {% if stock.changedir == 0 %}
-        <h2></h2>
+        <h2 class="greytext">{{stock.change}}&nbsp;&nbsp;&nbsp;({{stock.changepercent}}%)</h2>
     {% elif stock.changedir == 1 %}
-        <h2></h2>
+        <h2 class="greentext">+{{stock.change}}&nbsp;&nbsp;&nbsp;(+{{stock.changepercent}}%)</h2>
     {% else %}
-        <h2></h2>
+        <h2 class="redtext">{{stock.change}}&nbsp;&nbsp;&nbsp;({{stock.changepercent}}%)</h2>
     {% endif %}
 </div>
